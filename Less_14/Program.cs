@@ -38,14 +38,17 @@ namespace Less_14
             int[] baseArr = { 1, 2, 3, 4, 5 };
             for (int i = 0;i < baseArr.Length; i++)
                 Console.WriteLine($"[{i}] {baseArr[i]}");
+            Console.WriteLine();
 
             RemoveAt(ref baseArr, 2);
             for (int i = 0;i < baseArr.Length; i++)
                 Console.WriteLine($"[{i}] {baseArr[i]}");
+            Console.WriteLine();
 
             RemoveFirst(ref baseArr);
             for (int i = 0;i < baseArr.Length; i++)
                 Console.WriteLine($"[{i}] {baseArr[i]}");
+            Console.WriteLine();
 
             RemoveLast(ref baseArr);
             for (int i = 0;i < baseArr.Length; i++)
