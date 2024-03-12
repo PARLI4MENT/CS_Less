@@ -28,7 +28,7 @@ namespace Less_14
         {
             RemoveAt(ref arr, 0);
         }
-        static void RemoveEnd(ref int[] arr)
+        static void RemoveLast(ref int[] arr)
         {
             RemoveAt(ref arr, arr.Length -1);
         }
@@ -36,12 +36,20 @@ namespace Less_14
         static void Main(string[] args)
         {
             int[] baseArr = { 1, 2, 3, 4, 5 };
-            RemoveAt(ref baseArr, 6);
             for (int i = 0;i < baseArr.Length; i++)
-            {
-                Console.WriteLine($"{i} {baseArr[i]}");
-            }
-            Console.WriteLine();
+                Console.WriteLine($"[{i}] {baseArr[i]}");
+
+            RemoveAt(ref baseArr, 2);
+            for (int i = 0;i < baseArr.Length; i++)
+                Console.WriteLine($"[{i}] {baseArr[i]}");
+
+            RemoveFirst(ref baseArr);
+            for (int i = 0;i < baseArr.Length; i++)
+                Console.WriteLine($"[{i}] {baseArr[i]}");
+
+            RemoveLast(ref baseArr);
+            for (int i = 0;i < baseArr.Length; i++)
+                Console.WriteLine($"[{i}] {baseArr[i]}");
 
             Console.ReadLine();
         }
